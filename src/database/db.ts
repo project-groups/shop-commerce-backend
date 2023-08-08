@@ -4,7 +4,7 @@ export default class DataSource{
     connection(): Promise<any>{
         return new Promise(async (resolve, reject) => {
             try {
-                const db = await connect('mongodb://localhost:27017/ecommerce')
+                const db = await connect('mongodb://localhost:27017/shop-commerce')
                 console.log(`Connected to ${db.connection.name}`);
                 resolve(db);
             } catch (error) {
